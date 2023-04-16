@@ -5,12 +5,14 @@ body{
 }
 
 main {
+    text-shadow: 0 0 30px  rgb(65, 161, 225);
     flex-grow: 1;
     font-family: 'Promt', monospace;
     position: relative;
 }
 
 .circulo{
+    box-shadow: 0 0 20px  royalblue;
     border-radius: 50%;
     width: 125px;
     height: 125px;
@@ -24,6 +26,7 @@ main {
 }
 
 .circulo::before {
+    box-shadow: 0 0 20px  royalblue;
     content: '';
     border-radius: 50%;
     z-index: -1;
@@ -34,6 +37,7 @@ main {
 }
 
 .esferaSegundos{
+    box-shadow: 0 0 20px  royalblue;
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -54,6 +58,7 @@ main {
 }
 
 .pausa{
+    box-shadow: 0 0 20px  royalblue;
     height: 11px;
     border-width: 5px 0 6px 11px;
     cursor: pointer;
@@ -66,11 +71,13 @@ main {
 }
 
 .play{
+    box-shadow: 0 0 20px  royalblue;
     border-style: double;
     border-width: 0 0 0 11px;
 }
 
 .stop{
+    box-shadow: 0 0 20px  royalblue;
     background-color: white;
     height: 11px;
     width: 11px;
