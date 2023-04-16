@@ -1,0 +1,78 @@
+body{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    font-family: 'Promt', monospace;
+    position: relative;
+}
+
+.circulo{
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    border: 1px solid royalblue;
+    color: rgb(65, 161, 225);
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circulo::before {
+    content: '';
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    background-color: #4d4c4c;
+}
+
+.esferaSegundos{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color:rgb(65, 161, 225);
+    animation: rotacion 60s linear infinite;
+    position: absolute;
+    animation-play-state: paused;
+}
+
+@keyframes rotacion {
+    from { transform: rotate(-90deg) translateX(60px);}
+    to   { transform: rotate(270deg) translateX(60px);}
+}
+
+.botones{
+    margin-top: 11px;
+    display: inline-flex;
+}
+
+.pausa{
+    height: 11px;
+    border-width: 5px 0 6px 11px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-left: 15px;
+    border-color: transparent transparent transparent white;
+    transition: 100ms all aese;
+    will-change: border-width;
+    border-style: solid;
+}
+
+.running{
+    border-style: double;
+    border-width: 0 0 0 11px;
+}
+
+.stop{
+    background-color: white;
+    height: 11px;
+    width: 11px;
+    cursor: pointer;
+}
