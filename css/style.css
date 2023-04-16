@@ -65,7 +65,7 @@ main {
     border-style: solid;
 }
 
-.running{
+.play{
     border-style: double;
     border-width: 0 0 0 11px;
 }
